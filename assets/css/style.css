@@ -844,8 +844,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .products-title-mid{
   margin-top: -100px;
-
-
 }
 .products-title-mid h4{
   background: rgb(255, 255, 255, 0.8);
@@ -928,7 +926,6 @@ h1, h2, h3, h4, h5, h6 {
    }
   .products-title h4{
     font-size: 20px;
-;
   }
   .products-title p{
     font-size: 18px;
@@ -940,6 +937,9 @@ h1, h2, h3, h4, h5, h6 {
   .products-title .buy-img{
     top: 10vh;
     font-size: 15px;
+  }
+  .products-title-mid{
+    margin-top: -10px;
   }
   .buy-detail{
     top: 10vh;
