@@ -228,14 +228,20 @@
 let carts = document.querySelectorAll('.add-cart');
 let products = [
   {
-    name: 'NEFT QUBE 7,4 KW',
-    tag:'product-2',
-    price:'€ 679 (7,4kW)',
-    type: 'Charging station 7,4 KW',
-    kw:'7,4 kw',
+    name: 'NEFT QUBE 7,4kW',
+    Type: 'plug-and-charge',
+    tag:'product-1',
+    price:'€ 679',
+    Laadkabel: 'zonder vaste kabel',
+    Montage:'muur of sokkel',
+    Spanning:'220V - 380V',
+    Afmetingen:'210 x 160 x 210mm',
+    Omgevingstemp:'-25°C - 50°C',
+    Behuizing:'PC + ASA Ontvlambaar UL94 V-0',
     url: 'https://buy.stripe.com/test_3cs15scnjcVw0BG146',
     image:'NEFT QUBE 7,4kW/Charger 2.png',
-    about:'Introducing the Neft Qube – one of the smallest fast chargers on the market, designed and built for the everyday EV driver.'
+    about:'Maak kennis met de NEFT Qube - één van de kleinste snelladers op de markt, ontworpen en gebouwd voor de dagelijkse EV-rijder.',
+    more:'Dankzij zijn kleine formaat en discretie kan de NEFT Qube vrijwel overal geinstalleerd worden.<br><br>De NEFT Qube werkt volgens de plug-in-charge methode waardoor het enorm gebruiksviendelijk is. U hoeft enkel de aagesloten laadkabel van het laadstation in uw elektrische of hybride auto te pluggen en er wordt direct gestart met laden.'
   },
   {
     name: 'NEFT PRO 7,4kW',
@@ -319,20 +325,28 @@ function displayCart(){
               <h3>${cartItems.name}</h3>
               <ul>
                 <li class="priceText"><strong>Prijs</strong>: ${cartItems.price}</li>
-                <li><strong>Product Name</strong>: ${cartItems.name}</li>
-                <li><strong>KW</strong>: ${cartItems.kw}</li>
-                <li><strong>Type</strong>: ${cartItems.type}</li>
+                <li><strong>Type</strong>: ${cartItems.Type}</li>
+                <li><strong>Laadkabel</strong>: ${cartItems.Laadkabel}</li>
+                <li><strong>Montage</strong>: ${cartItems.Montage}</li>
+                <li><strong>Spanning</strong>: ${cartItems.Spanning}</li>
+                <li><strong>Afmetingen</strong>: ${cartItems.Afmetingen}</li>
+                <li><strong>Omgevingstemp</strong>: ${cartItems.Omgevingstemp}</li>
+                <li><strong>Behuizing</strong>: ${cartItems.Behuizing}</li>
                 <br>
                 <li class="button">
-                <a class="button-one" href="${cartItems.url}" role="button">BUY NOW</a>
+                <a class="button-one" href="${cartItems.url}" role="button">KOOP NU</a>
                 </li>
               </ul>
             </div>
 
             <div class="product-description">
-              <h2>About This Product</h2>
+              <h2>Op zoek naar een laadpaal met discretie en gebruiksgemak?</h2>
               <p>
               ${cartItems.about}
+              </p>
+              <h2>Compact & gebruiksvriendelijk</h2>
+              <p>
+              ${cartItems.more}
               </p>
             </div>
           </div>
