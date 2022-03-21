@@ -231,21 +231,7 @@ let products = [
     name: 'NEFT QUBE 7,4kW',
     price:'€ 679',
     tag:'product-1',
-    Details:'<b>Type: </b>plug-and-charge<br><br> <b>Laadkabel: </b>zonder vaste kabel<br><br> <b>Montage: </b>muur of sokkel<br><br> <b>Spanning: </b>220V - 380V<br><br> <b>Afmetingen: </b>210 x 160 x 210mm<br><br> <b>Omgevingstemp: </b>-25°C - 50°C<br><br> <b>Behuizing: </b>PC + ASA Ontvlambaar UL94 V-0<br>',
-
-
-    /*
-    Type: 'plug-and-charge',
-    Laadkabel: 'zonder vaste kabel',
-    Montage:'muur of sokkel',
-    Spanning:'220V - 380V',
-    Afmetingen:'210 x 160 x 210mm',
-    Omgevingstemp:'-25°C - 50°C',
-    Behuizing:'PC + ASA Ontvlambaar UL94 V-0', 
-    */
-
-
-
+    Details:'<li><strong>Type: </strong>plug-and-charge</li> <li><strong>Laadkabel: </strong>zonder vaste kabel</li> <li><strong>Montage: </strong>muur of sokkel</li> <li><strong>Spanning: </strong>220V - 380V</li> <li><strong>Afmetingen: </strong>210 x 160 x 210mm</li> <li><strong>Omgevingstemp: </strong>-25°C - 50°C</li> <li><strong>Behuizing: </strong>PC + ASA Ontvlambaar UL94 V-0</li>',
     url: 'https://buy.stripe.com/test_3cs15scnjcVw0BG146',
     image:'NEFT QUBE 7,4kW/Charger 2.png',
     about:'Maak kennis met de NEFT Qube - één van de kleinste snelladers op de markt, ontworpen en gebouwd voor de dagelijkse EV-rijder.',
