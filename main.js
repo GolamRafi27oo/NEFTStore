@@ -229,15 +229,23 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [
   {
     name: 'NEFT QUBE 7,4kW',
-    Type: 'plug-and-charge',
-    tag:'product-1',
     price:'€ 679',
+    tag:'product-1',
+    Details:'<b>Type: </b>plug-and-charge<br><br> <b>Laadkabel: </b>zonder vaste kabel<br><br> <b>Montage: </b>muur of sokkel<br><br> <b>Spanning: </b>220V - 380V<br><br> <b>Afmetingen: </b>210 x 160 x 210mm<br><br> <b>Omgevingstemp: </b>-25°C - 50°C<br><br> <b>Behuizing: </b>PC + ASA Ontvlambaar UL94 V-0<br>',
+
+
+    /*
+    Type: 'plug-and-charge',
     Laadkabel: 'zonder vaste kabel',
     Montage:'muur of sokkel',
     Spanning:'220V - 380V',
     Afmetingen:'210 x 160 x 210mm',
     Omgevingstemp:'-25°C - 50°C',
-    Behuizing:'PC + ASA Ontvlambaar UL94 V-0',
+    Behuizing:'PC + ASA Ontvlambaar UL94 V-0', 
+    */
+
+
+
     url: 'https://buy.stripe.com/test_3cs15scnjcVw0BG146',
     image:'NEFT QUBE 7,4kW/Charger 2.png',
     about:'Maak kennis met de NEFT Qube - één van de kleinste snelladers op de markt, ontworpen en gebouwd voor de dagelijkse EV-rijder.',
@@ -246,12 +254,14 @@ let products = [
   {
     name: 'NEFT PRO 7,4kW',
     tag:'product-1',
-    price:'€ 879 (7,4KW)',
-    type: 'Charging station 7,4 KW',
-    kw:'7,4 kw',
+    price:'€ 879',
+    Afmetingen:'210 x 160 x 210mm',
+
+    Type: 'Charging station 7,4 KW',
     url: 'https://buy.stripe.com/test_00g4hE0EB9Jk2JO3cf',
     image:'NEFT PRO 7,4kW/3.png',
-    about:'The PRO series from NEFT is a series of smart charging stations that adapt charging behavior to any circumstance so that you can charge as efficiently and cheaply as possible. The NEFT charging stations are suitable for all electric vehicles. For the EVs that are already part of the street scene, but also for the electric vehicles of the future.'
+    about:'The PRO series from NEFT is a series of smart charging stations that adapt charging behavior to any circumstance so that you can charge as efficiently and cheaply as possible. The NEFT charging stations are suitable for all electric vehicles. For the EVs that are already part of the street scene, but also for the electric vehicles of the future.',
+    more:'Dankzij zijn kleine formaat en discretie kan de NEFT Qube vrijwel overal geinstalleerd worden.<br><br>De NEFT Qube werkt volgens de plug-in-charge methode waardoor het enorm gebruiksviendelijk is. U hoeft enkel de aagesloten laadkabel van het laadstation in uw elektrische of hybride auto te pluggen en er wordt direct gestart met laden.'
 
   },
   {
@@ -325,13 +335,19 @@ function displayCart(){
               <h3>${cartItems.name}</h3>
               <ul>
                 <li class="priceText"><strong>Prijs</strong>: ${cartItems.price}</li>
-                <li><strong>Type</strong>: ${cartItems.Type}</li>
-                <li><strong>Laadkabel</strong>: ${cartItems.Laadkabel}</li>
-                <li><strong>Montage</strong>: ${cartItems.Montage}</li>
-                <li><strong>Spanning</strong>: ${cartItems.Spanning}</li>
-                <li><strong>Afmetingen</strong>: ${cartItems.Afmetingen}</li>
-                <li><strong>Omgevingstemp</strong>: ${cartItems.Omgevingstemp}</li>
-                <li><strong>Behuizing</strong>: ${cartItems.Behuizing}</li>
+                <li class="details">${cartItems.Details}</li>
+<!--
+
+<li><strong>Type</strong>: ${cartItems.Type}</li>
+<li><strong>Laadkabel</strong>: ${cartItems.Laadkabel}</li>
+<li><strong>Montage</strong>: ${cartItems.Montage}</li>
+<li><strong>Spanning</strong>: ${cartItems.Spanning}</li>
+<li><strong>Afmetingen</strong>: ${cartItems.Afmetingen}</li>
+<li><strong>Omgevingstemp</strong>: ${cartItems.Omgevingstemp}</li>
+<li><strong>Behuizing</strong>: ${cartItems.Behuizing}</li>
+
+
+-->
                 <br>
                 <li class="button">
                 <a class="button-one" href="${cartItems.url}" role="button">KOOP NU</a>
