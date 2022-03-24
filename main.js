@@ -61,14 +61,12 @@
   const scrollto = (el) => {
     let header = select('#header')
     let offset = header.offsetHeight
-
     let elementPos = select(el).offsetTop
     window.scrollTo({
       top: elementPos - offset,
       behavior: 'smooth'
     })
   }
-
   /**
    * Header fixed top on scroll
    */
@@ -88,7 +86,6 @@
     window.addEventListener('load', headerFixed)
     onscroll(document, headerFixed)
   }
-
   /**
    * Back to top button
    */
@@ -113,8 +110,6 @@
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
-
-
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
@@ -151,9 +146,6 @@
     selector: '.glightbox'
   });
   /**
-
-
-
   /**
    * Porfolio isotope and filter
    */
@@ -182,7 +174,6 @@
         });
       }, true);
     }
-
   });
 
   /**
@@ -234,6 +225,8 @@ let products = [
     Details:'<li><strong>Type: </strong>plug-and-charge</li> <li><strong>Laadkabel: </strong>zonder vaste kabel</li> <li><strong>Montage: </strong>muur of sokkel</li> <li><strong>Spanning: </strong>220V - 380V</li> <li><strong>Afmetingen: </strong>210 x 160 x 210mm</li> <li><strong>Omgevingstemp: </strong>-25°C - 50°C</li> <li><strong>Behuizing: </strong>PC + ASA Ontvlambaar UL94 V-0</li>',
     url: 'https://buy.stripe.com/test_3cs15scnjcVw0BG146',
     image:'NEFT QUBE 7,4kW/Charger 2.png',
+    headerOne:'Op zoek naar een laadpaal met discretie en gebruiksgemak?',
+    headerTwo:'Compact & gebruiksvriendelijk',
     about:'Maak kennis met de NEFT Qube - één van de kleinste snelladers op de markt, ontworpen en gebouwd voor de dagelijkse EV-rijder.',
     more:'Dankzij zijn kleine formaat en discretie kan de NEFT Qube vrijwel overal geinstalleerd worden.<br><br>De NEFT Qube werkt volgens de plug-in-charge methode waardoor het enorm gebruiksviendelijk is. U hoeft enkel de aagesloten laadkabel van het laadstation in uw elektrische of hybride auto te pluggen en er wordt direct gestart met laden.'
   },
@@ -241,25 +234,26 @@ let products = [
     name: 'NEFT PRO 7,4kW',
     tag:'product-1',
     price:'€ 879',
-    Afmetingen:'210 x 160 x 210mm',
-
-    Type: 'Charging station 7,4 KW',
+    Details:'<li><strong>Type: </strong>smart</li> <li><strong>Laadkabel: </strong>met vaste kabel</li>  <li><strong>Spanning: </strong>220V - 380V</li> <li><strong>Netwerk: </strong>Wi-Fi</li> <li><strong>Authorisatie: </strong>RFID-kaartlezer</li> <li><strong>Afmetingen: </strong>350 x 150 x 650mm</li> <li><strong>Omgevingstemp: </strong>-25°C - 50°C</li> <li><strong>Behuizing: </strong>PC + ASA Ontvlambaar UL94 V-0</li>',
     url: 'https://buy.stripe.com/test_00g4hE0EB9Jk2JO3cf',
     image:'NEFT PRO 7,4kW/3.png',
-    about:'The PRO series from NEFT is a series of smart charging stations that adapt charging behavior to any circumstance so that you can charge as efficiently and cheaply as possible. The NEFT charging stations are suitable for all electric vehicles. For the EVs that are already part of the street scene, but also for the electric vehicles of the future.',
-    more:'Dankzij zijn kleine formaat en discretie kan de NEFT Qube vrijwel overal geinstalleerd worden.<br><br>De NEFT Qube werkt volgens de plug-in-charge methode waardoor het enorm gebruiksviendelijk is. U hoeft enkel de aagesloten laadkabel van het laadstation in uw elektrische of hybride auto te pluggen en er wordt direct gestart met laden.'
-
+    headerOne:'Smart',
+    headerTwo:'Premium Design',
+    about:'NEFT PRO is een smart laadstation beschikbaar in verschillende vermogens en dus geschikt voor alle elektrische voertuigtypes. De load balancing functionaliteit voor een efficient stroomverdeling en de connectie met energiesoftware, maakt het laadstatlon zeer complementair met slimme energieinfrastructuur en biedt de mogelijkheid het energieverbruik op te volgen.',
+    more:'Een elegant design gecombineerd met het gebruik van hoogkwalitatief materiaal vormen samen een premium geheel. Zorgvuldig geselecteerde kunwoffen zorgen voor een robuust, weerbestendig en duurzaam product. De laadstatus wordt weergegeven aan de hand van oplichtende LED-verlichting in verschillende kleuren. De digitale display geeft de parameters weer van de laadsessie.<br><br> De laadstatus wordt weergegeven aan de hand van oplichtende LED-verlichting in verschillende kleuren. De dlgitale display geeft de parameters weer van de laadsessie.',
   },
   {
     name: 'NEFT PRO 11-22kW',
     tag:'product-1',
-    kw:'11-22 kw',
-    price:'€ 1079 (11-22kW)',
-    type: 'Charging station 11-22 KW', 
+    price:'€ 1079',
+    Details:'<li><strong>Type: </strong>smart</li> <li><strong>Laadkabel: </strong>zonder vaste kabel</li>  <li><strong>Spanning: </strong>220V - 380V</li> <li><strong>Netwerk: </strong>Wi-Fi</li> <li><strong>Authorisatie: </strong>RFID-kaartlezer</li> <li><strong>Afmetingen: </strong>350 x 150 x 650mm</li> <li><strong>Omgevingstemp: </strong>-25°C - 50°C</li> <li><strong>Behuizing: </strong>PC + ASA Ontvlambaar UL94 V-0</li>',
     url: 'https://buy.stripe.com/test_14kbK672ZbRs4RW148',
     image:'NEFT PRO 7,4kW/ZONDER KABEL 3.png',
-    about:'The PRO series from NEFT is a series of smart charging stations that adapt charging behavior to any circumstance so that you can charge as efficiently and cheaply as possible. The NEFT charging stations are suitable for all electric vehicles. For the EVs that are already part of the street scene, but also for the electric vehicles of the future.'
-
+    headerOne:'Smart',
+    headerTwo:'Premium Design',
+    about:'NEFT PRO is een smart laadstation beschikbaar in verschillende vermogens en dus geschikt voor alle elektrische voertuigtypes. De load balancing functionaliteit voor een efficient stroomverdeling en de connectie met energiesoftware, maakt het laadstatlon zeer complementair met slimme energieinfrastructuur en biedt de mogelijkheid het energieverbruik op te volgen.',
+    more:'Een elegant design gecombineerd met het gebruik van hoogkwalitatief materiaal vormen samen een premium geheel. Zorgvuldig geselecteerde kunwoffen zorgen voor een robuust, weerbestendig en duurzaam product. De laadstatus wordt weergegeven aan de hand van oplichtende LED-verlichting in verschillende kleuren. De digitale display geeft de parameters weer van de laadsessie.<br><br> De laadstatus wordt weergegeven aan de hand van oplichtende LED-verlichting in verschillende kleuren. De dlgitale display geeft de parameters weer van de laadsessie.',
+  
   },
   {
     name: 'EV Laadkabels',
@@ -269,6 +263,8 @@ let products = [
     kw:'11-22 kw',
     url: 'https://buy.stripe.com/test_14kbK672ZbRs4RW148',
     image:'cable-black/17.png',
+    headerOne:'Smart',
+    headerTwo:'test',
     about:'Charging Cable: Type 2, 11-22kw, 5 Meter, Load balancing'
   },
   {
@@ -279,12 +275,14 @@ let products = [
     kw:'7,4 kw',
     url: 'https://buy.stripe.com/test_14kbK672ZbRs4RW148',
     image:'cable-green/1.png',
+    headerOne:'Smart',
+    headerTwo:'test',
     about:'Charging Cable: Type 2, 7,4kw, 3 Meter, Load balancing'
   },
 ];
 for (let i = 0; i  < carts.length; i++) {
   let buy = carts[i];
-  buy.addEventListener('mouseenter', () => {
+  buy.addEventListener('click', () => {
     //console.log(products[i]);
     localStorage.setItem('buy', JSON.stringify(products[i]));
   });
@@ -302,9 +300,7 @@ function displayCart(){
 
     <section id="product-details" class="product-details" data-aos="fade-up">
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-8">
             <div class="product-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
@@ -315,51 +311,34 @@ function displayCart(){
               <div class="swiper-pagination"></div>
             </div>
           </div>
-
           <div class="col-lg-4">
             <div class="product-info">
               <h3>${cartItems.name}</h3>
               <ul>
                 <li class="priceText"><strong>Prijs</strong>: ${cartItems.price}</li>
                 <li class="details">${cartItems.Details}</li>
-<!--
-
-<li><strong>Type</strong>: ${cartItems.Type}</li>
-<li><strong>Laadkabel</strong>: ${cartItems.Laadkabel}</li>
-<li><strong>Montage</strong>: ${cartItems.Montage}</li>
-<li><strong>Spanning</strong>: ${cartItems.Spanning}</li>
-<li><strong>Afmetingen</strong>: ${cartItems.Afmetingen}</li>
-<li><strong>Omgevingstemp</strong>: ${cartItems.Omgevingstemp}</li>
-<li><strong>Behuizing</strong>: ${cartItems.Behuizing}</li>
-
-
--->
                 <br>
                 <li class="button">
-                <a class="button-one" href="${cartItems.url}" role="button">KOOP NU</a>
+                  <a class="button-one" href="${cartItems.url}" role="button">KOOP NU</a>
                 </li>
               </ul>
             </div>
-
             <div class="product-description">
-              <h2>Op zoek naar een laadpaal met discretie en gebruiksgemak?</h2>
+              <h2>${cartItems.headerOne}</h2>
               <p>
               ${cartItems.about}
               </p>
-              <h2>Compact & gebruiksvriendelijk</h2>
+              <h2>${cartItems.headerTwo}</h2>
               <p>
               ${cartItems.more}
               </p>
             </div>
           </div>
-
         </div>
       </div>
-
     </section>
     `;
     });
-
   }else{
     console.log('Not NEFT product page!');
   }
