@@ -263,9 +263,11 @@ let products = [
     kw:'11-22 kw',
     url: 'https://buy.stripe.com/test_14kbK672ZbRs4RW148',
     image:'cable-black/17.png',
-    headerOne:'Smart',
-    headerTwo:'test',
-    about:'Charging Cable: Type 2, 11-22kw, 5 Meter, Load balancing'
+    Details:'',
+    headerOne:'',
+    headerTwo:'',
+    about:'<li>Type 2</li> <li>22kw</li> <li>5 Meter</li> <li>Load balancing</li> <li>Beschermingsgraad IP 44</li>',
+    more:''
   },
   {
     name: 'EV Laadkabels - uitrekbaar',
@@ -275,9 +277,11 @@ let products = [
     kw:'7,4 kw',
     url: 'https://buy.stripe.com/test_14kbK672ZbRs4RW148',
     image:'cable-green/1.png',
-    headerOne:'Smart',
-    headerTwo:'test',
-    about:'Charging Cable: Type 2, 7,4kw, 3 Meter, Load balancing'
+    Details:'',
+    headerOne:'',
+    headerTwo:'',
+    about:'<li>Type 2</li> <li>7,4kw</li> <li>3 Meter</li> <li>Load balancing</li> <li>Universeel</li> <li>Voorkomt het rondslingeren</li> <li>Beschermingsgraad IP 44</li>',
+    more:''
   },
 ];
 for (let i = 0; i  < carts.length; i++) {
@@ -323,13 +327,13 @@ function displayCart(){
                 </li>
               </ul>
             </div>
-            <div class="product-description">
+            <div class="product-description about-li">
               <h2>${cartItems.headerOne}</h2>
-              <p>
+              <p class="about-li">
               ${cartItems.about}
               </p>
               <h2>${cartItems.headerTwo}</h2>
-              <p>
+              <p class="about-li">
               ${cartItems.more}
               </p>
             </div>

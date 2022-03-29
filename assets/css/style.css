@@ -1064,3 +1064,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '✓ ';
   color: #5ecc5e;
 }
+.about-li li{
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.8);
+}
