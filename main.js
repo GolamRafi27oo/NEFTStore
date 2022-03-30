@@ -348,5 +348,6 @@ function displayCart(){
   }
 }
 
+
 displayCart();
 //localStorage.clear();
