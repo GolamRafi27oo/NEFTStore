@@ -214,7 +214,7 @@
   });
 
 })()
-/*product details*/
+/*product details start*/
 
 let carts = document.querySelectorAll('.add-cart');
 let products = [
@@ -223,7 +223,7 @@ let products = [
     price:'€ 679',
     tag:'product-1',
     Details:'<li><strong>Type: </strong>plug-and-charge</li> <li><strong>Laadkabel: </strong>zonder vaste kabel</li> <li><strong>Montage: </strong>muur of sokkel</li> <li><strong>Spanning: </strong>220V - 380V</li> <li><strong>Afmetingen: </strong>210 x 160 x 210mm</li> <li><strong>Omgevingstemp: </strong>-25°C - 50°C</li> <li><strong>Behuizing: </strong>PC + ASA Ontvlambaar UL94 V-0</li>',
-    url: 'https://buy.stripe.com/test_3cs15scnjcVw0BG146',
+    buyUrl: 'https://buy.stripe.com/test_3cs15scnjcVw0BG146',
     image:'NEFT QUBE 7,4kW/Charger 2.png',
     headerOne:'Op zoek naar een laadpaal met discretie en gebruiksgemak?',
     headerTwo:'Compact & gebruiksvriendelijk',
@@ -235,7 +235,7 @@ let products = [
     tag:'product-1',
     price:'€ 879',
     Details:'<li><strong>Type: </strong>smart</li> <li><strong>Laadkabel: </strong>met vaste kabel</li>  <li><strong>Spanning: </strong>220V - 380V</li> <li><strong>Netwerk: </strong>Wi-Fi</li> <li><strong>Authorisatie: </strong>RFID-kaartlezer</li> <li><strong>Afmetingen: </strong>350 x 150 x 650mm</li> <li><strong>Omgevingstemp: </strong>-25°C - 50°C</li> <li><strong>Behuizing: </strong>PC + ASA Ontvlambaar UL94 V-0</li>',
-    url: 'https://buy.stripe.com/test_00g4hE0EB9Jk2JO3cf',
+    buyUrl: 'https://buy.stripe.com/test_00g4hE0EB9Jk2JO3cf',
     image:'NEFT PRO 7,4kW/3.png',
     headerOne:'Smart',
     headerTwo:'Premium Design',
@@ -247,7 +247,7 @@ let products = [
     tag:'product-1',
     price:'€ 1079',
     Details:'<li><strong>Type: </strong>smart</li> <li><strong>Laadkabel: </strong>zonder vaste kabel</li>  <li><strong>Spanning: </strong>220V - 380V</li> <li><strong>Netwerk: </strong>Wi-Fi</li> <li><strong>Authorisatie: </strong>RFID-kaartlezer</li> <li><strong>Afmetingen: </strong>350 x 150 x 650mm</li> <li><strong>Omgevingstemp: </strong>-25°C - 50°C</li> <li><strong>Behuizing: </strong>PC + ASA Ontvlambaar UL94 V-0</li>',
-    url: 'https://buy.stripe.com/test_14kbK672ZbRs4RW148',
+    buyUrl: 'https://buy.stripe.com/test_14kbK672ZbRs4RW148',
     image:'NEFT PRO 7,4kW/ZONDER KABEL 3.png',
     headerOne:'Smart',
     headerTwo:'Premium Design',
@@ -261,7 +261,7 @@ let products = [
     price:'€ 250',
     type: 'Charging Cable',
     kw:'11-22 kw',
-    url: 'https://buy.stripe.com/test_14kbK672ZbRs4RW148',
+    buyUrl: 'https://buy.stripe.com/test_14kbK672ZbRs4RW148',
     image:'cable-black/17.png',
     Details:'',
     headerOne:'',
@@ -275,7 +275,7 @@ let products = [
     price:'€ 250',
     type: 'Charging Cable',
     kw:'7,4 kw',
-    url: 'https://buy.stripe.com/test_14kbK672ZbRs4RW148',
+    buyUrl: 'https://buy.stripe.com/test_14kbK672ZbRs4RW148',
     image:'cable-green/1.png',
     Details:'',
     headerOne:'',
@@ -284,6 +284,9 @@ let products = [
     more:''
   },
 ];
+/*product details end*/
+
+/*product-details page genarator start*/
 for (let i = 0; i  < carts.length; i++) {
   let buy = carts[i];
   buy.addEventListener('click', () => {
@@ -323,7 +326,7 @@ function displayCart(){
                 <li class="details">${cartItems.Details}</li>
                 <br>
                 <li class="button">
-                  <a class="button-one" href="${cartItems.url}" role="button">KOOP NU</a>
+                  <a class="button-one" target="_blank" href="${cartItems.buyUrl}" role="button">KOOP NU</a>
                 </li>
               </ul>
             </div>
@@ -348,6 +351,6 @@ function displayCart(){
   }
 }
 
-
 displayCart();
 //localStorage.clear();
+/*product-details page genarator start*/
