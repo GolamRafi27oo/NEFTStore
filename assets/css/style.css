@@ -1070,3 +1070,24 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: rgb(255, 255, 255, 0.8);
 }
+
+/*Maintenance start*/
+.maintenance{
+  text-align: center; 
+  padding-top: 100px;
+}
+.maintenance h1{
+  color: rgb(238, 235, 235);
+}
+.maintenance p{
+  color: rgb(236, 232, 232);
+}
+
+@media screen and (max-width:762px) {
+  .maintenance h1{
+    font-size: 20px;
+  }
+  .maintenance p{
+    font-size: 10px;
+  }
+}
