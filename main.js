@@ -220,7 +220,7 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [
   {
     name: 'NEFT QUBE 7,4kW',
-    price:'€ 679',
+    price:'€ 699',
     tag:'product-1',
     Details:'<li><strong>Type: </strong>plug-and-charge</li> <li><strong>Laadkabel: </strong>zonder vaste kabel</li> <li><strong>Montage: </strong>muur of sokkel</li> <li><strong>Spanning: </strong>220V - 380V</li> <li><strong>Afmetingen: </strong>210 x 160 x 210mm</li> <li><strong>Omgevingstemp: </strong>-25°C - 50°C</li> <li><strong>Behuizing: </strong>PC + ASA Ontvlambaar UL94 V-0</li>',
     buyUrl: '',
@@ -233,7 +233,7 @@ let products = [
   {
     name: 'NEFT PRO 7,4kW',
     tag:'product-1',
-    price:'€ 879',
+    price:'€ 899',
     Details:'<li><strong>Type: </strong>smart</li> <li><strong>Laadkabel: </strong>met vaste kabel</li>  <li><strong>Spanning: </strong>220V - 380V</li> <li><strong>Netwerk: </strong>Wi-Fi</li> <li><strong>Authorisatie: </strong>RFID-kaartlezer</li> <li><strong>Afmetingen: </strong>350 x 150 x 650mm</li> <li><strong>Omgevingstemp: </strong>-25°C - 50°C</li> <li><strong>Behuizing: </strong>PC + ASA Ontvlambaar UL94 V-0</li>',
     buyUrl: '',
     image:'NEFT PRO 7,4kW/3.png',
@@ -245,7 +245,7 @@ let products = [
   {
     name: 'NEFT PRO 11-22kW',
     tag:'product-1',
-    price:'€ 1079',
+    price:'€ 1099',
     Details:'<li><strong>Type: </strong>smart</li> <li><strong>Laadkabel: </strong>zonder vaste kabel</li>  <li><strong>Spanning: </strong>220V - 380V</li> <li><strong>Netwerk: </strong>Wi-Fi</li> <li><strong>Authorisatie: </strong>RFID-kaartlezer</li> <li><strong>Afmetingen: </strong>350 x 150 x 650mm</li> <li><strong>Omgevingstemp: </strong>-25°C - 50°C</li> <li><strong>Behuizing: </strong>PC + ASA Ontvlambaar UL94 V-0</li>',
     buyUrl: '',
     image:'NEFT PRO 7,4kW/ZONDER KABEL 3.png',
